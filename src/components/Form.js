@@ -64,6 +64,7 @@ class ToDoForm extends React.Component {
     return (
       <div>
         <Form className="shadow px-3 pt-3 pb-3" onSubmit={this.handleSubmit}>
+          <h1 className="text-center">TODO LIST</h1>
           <FormGroup>
             <Label for="title">Title</Label>
             <Input

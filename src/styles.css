@@ -1,3 +1,17 @@
 .App {
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica;
+  width: 700px !important;
+  font-size: 12px;
+}
+
+.btn-primary,
+.btn-primary:hover {
+  background-color: #004b8d;
+  border-color: #004b8d;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    font-size: 14px;
+  }
 }

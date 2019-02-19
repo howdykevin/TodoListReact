@@ -24,9 +24,11 @@ class Todos extends React.Component {
               <h1>{this.props.header}</h1>
             </CardTitle>
             <CardSubtitle>
-              <h6>Description:</h6>
+              <h3>Description:</h3>
             </CardSubtitle>
-            <CardText>{this.props.bodyText}</CardText>
+            <CardText>
+              <h5>{this.props.bodyText}</h5>
+            </CardText>
             {/*input checkbox here */}
             <div>
               <CustomInput
