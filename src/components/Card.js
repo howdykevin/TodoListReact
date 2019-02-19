@@ -9,6 +9,7 @@ import {
   CardFooter,
   CustomInput
 } from "reactstrap";
+import PropTypes from "prop-types";
 
 class Todos extends React.Component {
   constructor(props) {
@@ -16,30 +17,45 @@ class Todos extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="mb-2">
         <Card>
           <CardBody>
             <CardTitle>
-              <h1>Hello</h1>
+              <h1>{this.props.header}</h1>
             </CardTitle>
             <CardSubtitle>
               <h6>Description:</h6>
             </CardSubtitle>
-            <CardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </CardText>
+            <CardText>{this.props.bodyText}</CardText>
             {/*input checkbox here */}
-            <CustomInput />
-            <Button color="danger">
+            <div>
+              <CustomInput
+                type="switch"
+                id={this.props.header}
+                name={this.props.header}
+                label="Have you finished the task?"
+              />
+            </div>
+            <br />
+            <Button color="danger" onClick={this.props.delete}>
               <i class="fas fa-trash-alt" />
             </Button>
           </CardBody>
-          <CardFooter className="text-muted">Created at: 1/2/2019</CardFooter>
+          <CardFooter className="text-muted">
+            Created at: {this.props.createdate}
+          </CardFooter>
         </Card>
       </div>
     );
   }
 }
+
+Todos.PropTypes = {
+  header: PropTypes.string,
+  bodyText: PropTypes.string,
+  createdate: PropTypes.string,
+  delete: PropTypes.func,
+  key: PropTypes.number
+};
 
 export default Todos;
