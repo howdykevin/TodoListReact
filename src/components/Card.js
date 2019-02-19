@@ -6,7 +6,8 @@ import {
   CardTitle,
   CardSubtitle,
   Button,
-  CardFooter
+  CardFooter,
+  CustomInput
 } from "reactstrap";
 
 class Todos extends React.Component {
@@ -29,7 +30,7 @@ class Todos extends React.Component {
               bulk of the card's content.
             </CardText>
             {/*input checkbox here */}
-            <p>Done:</p>
+            <CustomInput />
             <Button color="danger">
               <i class="fas fa-trash-alt" />
             </Button>
