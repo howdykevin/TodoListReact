@@ -99,7 +99,7 @@ class ToDoForm extends React.Component {
             />
           </FormGroup>
           <Button color="primary">
-            <i class="fas fa-plus-circle" /> Add
+            <i className="fas fa-plus-circle" /> Add
           </Button>
         </Form>
         <br />
