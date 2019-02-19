@@ -26,9 +26,7 @@ class Todos extends React.Component {
             <CardSubtitle>
               <h3>Description:</h3>
             </CardSubtitle>
-            <CardText>
-              <h5>{this.props.bodyText}</h5>
-            </CardText>
+            <CardText>{this.props.bodyText}</CardText>
             {/*input checkbox here */}
             <div>
               <CustomInput
@@ -40,7 +38,7 @@ class Todos extends React.Component {
             </div>
             <br />
             <Button color="danger" onClick={this.props.delete}>
-              <i class="fas fa-trash-alt" />
+              <i className="fas fa-trash-alt" />
             </Button>
           </CardBody>
           <CardFooter className="text-muted">
