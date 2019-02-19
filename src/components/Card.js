@@ -17,7 +17,7 @@ class Todos extends React.Component {
   }
   render() {
     return (
-      <div className="mb-2">
+      <div className="mb-2 shadow">
         <Card>
           <CardBody>
             <CardTitle>
