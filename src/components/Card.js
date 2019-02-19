@@ -52,7 +52,7 @@ class Todos extends React.Component {
   }
 }
 
-Todos.PropTypes = {
+Todos.propTypes = {
   header: PropTypes.string,
   bodyText: PropTypes.string,
   createdate: PropTypes.string,

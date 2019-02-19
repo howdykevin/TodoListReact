@@ -1,0 +1,15 @@
+.App {
+  font-family: Helvetica;
+  width: 700px !important;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    font-size: 14px;
+  }
+}
+
+$primary: #004b8d;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

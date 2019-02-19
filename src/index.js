@@ -1,11 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Todos from "./components/Card";
 import TodoForm from "./components/Form";
 import { Container } from "reactstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 
-import "./styles.css";
+import "./styles.scss";
 
 class App extends React.Component {
   render() {
